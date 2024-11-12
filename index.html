@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+<body>
+    <!-- Menu -->
+    <nav class="menu">
+        <img class="logo" src="assets/Logo EMP.jpeg" alt="">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+        <ul id="menu-list" class="menu-list">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo -->
+    <header class="header">
+        <img class="logoT" src="assets/Logo EMP.jpeg" alt="">
+        <h1 class="cabeçalho">NortheastDev_</h1>
+        <p class="subTitle">
+            <strong>NortheastDev</strong> é uma empresa especializada em soluções tecnológicas, focada no desenvolvimento de software inovador e de alto desempenho.<br>
+            Nossa equipe de especialistas trabalha de perto com os clientes para entender suas necessidades e entregar soluções personalizadas que impulsionam o crescimento e a eficiência dos negócios.<br>
+            Com um compromisso firme com a qualidade, agilidade e a busca constante por inovação, somos o parceiro ideal para transformar ideias em resultados concretos.
+        </p>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const menuList = document.getElementById('menu-list');
+            menuList.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

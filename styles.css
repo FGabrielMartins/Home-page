@@ -1,0 +1,162 @@
+/* Fontes e animações */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.material-symbols-outlined {
+    
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Fundo Gradiente */
+body {
+    background: linear-gradient(135deg, #F13D30, #FF7C00); /* Gradiente suave de laranja */
+    font-family: 'Audiowide', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.logo{
+    width: 50px;
+    border-radius: 30px;
+}
+
+.logoT{
+    width: 150px;
+    border-radius: 30px;
+}
+
+/* Menu */
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-toggle {
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    text-align: center;
+}
+
+.menu-list.active {
+    display: block;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.menu-list li {
+    margin: 10px 0;
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-list a:hover {
+    background-color: #fff;
+    color: #F13D30;
+    transform: scale(1.1);
+}
+
+/* Animação para o cabeçalho */
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+.cabeçalho {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    animation: typing 3s steps(15) 1s forwards;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.subTitle {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Transições suaves */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        padding: 40px 20px;
+    }
+
+    .cabeçalho {
+        font-size: 40px;
+    }
+
+    .subTitle {
+        font-size: 16px;
+    }
+
+    .menu {
+        top: 10px;
+        left: 10px;
+    }
+
+    .menu-list {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #F13D30;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
